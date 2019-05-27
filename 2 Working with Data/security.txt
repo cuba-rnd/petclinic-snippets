@@ -1,0 +1,1 @@
+{E}.veterinarian.user.id = :session$userId
