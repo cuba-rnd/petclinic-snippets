@@ -1,0 +1,20 @@
+            <chart:pivotTable id="visitsPivotTable"
+                              dataContainer="visitsDc"
+                              height="AUTO"
+                              renderer="HEATMAP"
+                              width="100%">
+                <chart:aggregation mode="SUM">
+                    <chart:property name="amount"/>
+                </chart:aggregation>
+                <chart:columns>
+                    <chart:column value="date"/>
+                </chart:columns>
+                <chart:properties>
+                    <chart:property name="amount"/>
+                    <chart:property name="date"/>
+                    <chart:property name="veterinarian"/>
+                </chart:properties>
+                <chart:rows>
+                    <chart:row value="veterinarian"/>
+                </chart:rows>
+            </chart:pivotTable>
