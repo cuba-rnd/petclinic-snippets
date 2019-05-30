@@ -1,0 +1,60 @@
+/* Define your theme modifications inside next mixin */
+@mixin com_company_clinic-hover-ext {
+
+  .metrics-panel {
+    border-radius: 4px;
+    transition: box-shadow 100ms;
+    width: calc(45% - 20px) !important;
+    height: 150px;
+
+    &:hover {
+      box-shadow: 0 0 20px #d4d4d4;
+    }
+  }
+
+  .metrics-hbox {
+    border-radius: 4px;
+    transition: box-shadow 100ms;
+    width: calc(95% - 20px) !important;
+    height: 20px !important;
+
+    &:hover {
+      box-shadow: 0 0 20px #d4d4d4;
+    }
+
+    &[width-range~="0px-600px"] {
+      background-color: gray;
+    }
+
+    &[width-range~="601px-1000px"] {
+      background-color: lightgray;
+    }
+
+    &[width-range~="1001px-"] {
+      background-color: white;
+    }
+  }
+
+  .widgets-panel {
+    width: 100%;
+  }
+
+  .c-sidemenu-responsive {
+    overflow: visible;
+  }
+
+  .dashboard-layout {
+    overflow: auto;
+  }
+
+  .v-slot-widgets-panel,
+  .widgets-panel {
+    overflow: auto;
+  }
+
+  .metrics-panel,
+  .dashboard-widget {
+    margin: 10px;
+  }
+
+}
