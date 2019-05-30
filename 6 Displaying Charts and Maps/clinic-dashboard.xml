@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/screen/window.xsd"
+        xmlns:chart="http://schemas.haulmont.com/charts/charts.xsd"
+        caption="msg://caption"
+        messagesPack="com.company.clinic.web.dashboard" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://schemas.haulmont.com/charts/charts.xsd ">
+    <layout stylename="dashboard-layout"
+            spacing="true" responsive="true" expand="widgetsBox">
+        <cssLayout stylename="dashboard-header" responsive="true" width="100%">
+            <hbox width="100%" margin="true">
+                <label stylename="h1"
+                       value="Clinic Dashboard"/>
+            </hbox>
+
+            <chart:serialChart height="150px"
+                               stylename="metrics-panel"
+                               width="50%"
+                               creditsPosition="BOTTOM_RIGHT"
+                               categoryField="x">
+                <chart:categoryAxis axisAlpha="0"
+                                    gridAlpha="0"
+                                    labelsEnabled="false"/>
+                <chart:valueAxes>
+                    <chart:axis axisAlpha="0"
+                                gridAlpha="0"
+                                labelsEnabled="false"
+                                position="LEFT"
+                                stackType="REGULAR"/>
+                </chart:valueAxes>
+                <chart:graphs>
+                    <chart:graph valueField="y"/>
+                </chart:graphs>
+                <chart:allLabels>
+                    <chart:label text="Revenue / Day" size="14" align="CENTER" y="5"/>
+                </chart:allLabels>
+                <chart:data>
+                    <chart:item>
+                        <chart:property name="x" value="1" type="double"/>
+                        <chart:property name="y" value="2" type="double"/>
+                    </chart:item>
+                    <chart:item>
+                        <chart:property name="x" value="2" type="double"/>
+                        <chart:property name="y" value="5" type="double"/>
+                    </chart:item>
+                    <chart:item>
+                        <chart:property name="x" value="3" type="double"/>
+                        <chart:property name="y" value="1" type="double"/>
+                    </chart:item>
+                    <chart:item>
+                        <chart:property name="x" value="4" type="double"/>
+                        <chart:property name="y" value="7" type="double"/>
+                    </chart:item>
+                </chart:data>
+            </chart:serialChart>
+
+            <chart:serialChart height="150px"
+                               stylename="metrics-panel"
+                               width="50%"
+                               creditsPosition="BOTTOM_RIGHT"
+                               categoryField="x">
+                <chart:categoryAxis axisAlpha="0"
+                                    gridAlpha="0"
+                                    labelsEnabled="false"/>
+                <chart:valueAxes>
+                    <chart:axis axisAlpha="0"
+                                gridAlpha="0"
+                                labelsEnabled="false"
+                                position="LEFT"
+                                stackType="REGULAR"/>
+                </chart:valueAxes>
+                <chart:graphs>
+                    <chart:graph valueField="y"/>
+                </chart:graphs>
+                <chart:allLabels>
+                    <chart:label text="Mean attending time" size="14" align="CENTER" y="5"/>
+                </chart:allLabels>
+                <chart:data>
+                    <chart:item>
+                        <chart:property name="x" value="1" type="double"/>
+                        <chart:property name="y" value="2" type="double"/>
+                    </chart:item>
+                    <chart:item>
+                        <chart:property name="x" value="2" type="double"/>
+                        <chart:property name="y" value="5" type="double"/>
+                    </chart:item>
+                    <chart:item>
+                        <chart:property name="x" value="3" type="double"/>
+                        <chart:property name="y" value="1" type="double"/>
+                    </chart:item>
+                    <chart:item>
+                        <chart:property name="x" value="4" type="double"/>
+                        <chart:property name="y" value="7" type="double"/>
+                    </chart:item>
+                </chart:data>
+            </chart:serialChart>
+
+            <chart:serialChart height="150px"
+                               stylename="metrics-panel"
+                               width="50%"
+                               creditsPosition="BOTTOM_RIGHT"
+                               categoryField="x">
+                <chart:categoryAxis axisAlpha="0"
+                                    gridAlpha="0"
+                                    labelsEnabled="false"/>
+                <chart:valueAxes>
+                    <chart:axis axisAlpha="0"
+                                gridAlpha="0"
+                                labelsEnabled="false"
+                                position="LEFT"
+                                stackType="REGULAR"/>
+                </chart:valueAxes>
+                <chart:graphs>
+                    <chart:graph valueField="y"/>
+                </chart:graphs>
+                <chart:allLabels>
+                    <chart:label text="Attendincies / Day" size="14" align="CENTER" y="5"/>
+                </chart:allLabels>
+                <chart:data>
+                    <chart:item>
+                        <chart:property name="x" value="1"/>
+                        <chart:property name="y" value="2" type="double"/>
+                    </chart:item>
+                    <chart:item>
+                        <chart:property name="x" value="2"/>
+                        <chart:property name="y" value="5" type="double"/>
+                    </chart:item>
+                    <chart:item>
+                        <chart:property name="x" value="3"/>
+                        <chart:property name="y" value="1" type="double"/>
+                    </chart:item>
+                    <chart:item>
+                        <chart:property name="x" value="4"/>
+                        <chart:property name="y" value="7" type="double"/>
+                    </chart:item>
+                </chart:data>
+            </chart:serialChart>
+
+            <chart:serialChart height="150px"
+                               stylename="metrics-panel"
+                               width="50%"
+                               creditsPosition="BOTTOM_RIGHT"
+                               categoryField="x">
+                <chart:categoryAxis axisAlpha="0"
+                                    gridAlpha="0"
+                                    labelsEnabled="false"/>
+                <chart:valueAxes>
+                    <chart:axis axisAlpha="0"
+                                gridAlpha="0"
+                                labelsEnabled="false"
+                                position="LEFT"
+                                minimum="0"
+                                stackType="FILL"/>
+                </chart:valueAxes>
+                <chart:graphs>
+                    <chart:graph valueField="y"
+                                 type="COLUMN"/>
+                </chart:graphs>
+                <chart:allLabels>
+                    <chart:label text="Patients last week" size="14" align="CENTER" y="5"/>
+                </chart:allLabels>
+                <chart:data>
+                    <chart:item>
+                        <chart:property name="x" value="Monday"/>
+                        <chart:property name="y" value="5" type="double"/>
+                    </chart:item>
+                    <chart:item>
+                        <chart:property name="x" value="Tuesday"/>
+                        <chart:property name="y" value="8" type="double"/>
+                    </chart:item>
+                    <chart:item>
+                        <chart:property name="x" value="Wednesday"/>
+                        <chart:property name="y" value="10" type="double"/>
+                    </chart:item>
+                    <chart:item>
+                        <chart:property name="x" value="Thursday"/>
+                        <chart:property name="y" value="9" type="double"/>
+                    </chart:item>
+                    <chart:item>
+                        <chart:property name="x" value="Friday"/>
+                        <chart:property name="y" value="15" type="double"/>
+                    </chart:item>
+                </chart:data>
+            </chart:serialChart>
+
+            <hbox responsive="true" stylename="metrics-hbox" width="100%" height="10px">
+            </hbox>
+        </cssLayout>
+
+        <cssLayout id="widgetsBox" stylename="widgets-panel">
+            <chart:pieChart id="revenueChart"
+                            stylename="dashboard-widget"
+                            height="90%"
+                            width="90%"
+                            titleField="title"
+                            valueField="value"
+                            creditsPosition="BOTTOM_RIGHT">
+                <chart:data>
+                    <chart:item>
+                        <chart:property name="value" value="10"/>
+                        <chart:property name="title" value="Administrator"/>
+                    </chart:item>
+                    <chart:item>
+                        <chart:property name="value" value="13"/>
+                        <chart:property name="title" value="John Vet"/>
+                    </chart:item>
+                    <chart:item>
+                        <chart:property name="value" value="35"/>
+                        <chart:property name="title" value="Jane Vetty"/>
+                    </chart:item>
+                    <chart:item>
+                        <chart:property name="value" value="22"/>
+                        <chart:property name="title" value="Bill Catlover"/>
+                    </chart:item>
+                </chart:data>
+                <chart:allLabels>
+                    <chart:label text="Revenue by Doctor"
+                                 size="18"
+                                 bold="true"
+                                 x="10"
+                                 y="10"/>
+                </chart:allLabels>
+            </chart:pieChart>
+        </cssLayout>
+
+    </layout>
+</window>
